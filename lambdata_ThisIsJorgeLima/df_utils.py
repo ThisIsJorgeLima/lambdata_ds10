@@ -14,33 +14,34 @@ class Test:
     op function.
     """
 
-    def jrglim ():
+    def __init__ (self):
         """
         Check a dataframe for nulls
         Let's check and see if this string is empty 
         using not + strip() 
         inilializing string 
         """
-        test_str1 = "" 
-        test_str2 = "  "
+        self.test_str1 = "" 
+        self.test_str2 = "  "
 
         # checking if string is empty 
         print ("The zero length string without spaces is empty ? : ", end = "") 
-        if(not (test_str1 and test_str1.strip())): 
+        if(not (self.test_str1 and self.test_str1.strip())): 
             print ("Yes") 
         else : 
             print ("No") 
 
         # prints Yes 
         print ("The zero length string with just spaces is empty ? : ", end = "") 
-        if(not(test_str2 and test_str2.strip())): 
+        if(not(self.test_str2 and self.test_str2.strip())): 
             print ("Yes") 
         else : 
             print ("No") 
 
 
     def data_split(examples, labels, train_frac, random_state=None):
-        ''' https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.train_test_split.html
+        ''' 
+        https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.train_test_split.html
         param data:       Data to be split
         param train_frac: Ratio of train set to whole dataset
 
